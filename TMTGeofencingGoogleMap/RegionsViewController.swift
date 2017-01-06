@@ -17,7 +17,11 @@ class RegionsViewController: UIViewController {
     @IBOutlet weak var updatesTableView: UITableView!
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var addRegion: UIBarButtonItem!
-    var updateEvents: [String] = []
+    var updateEvents: [String] = [] {
+        didSet {
+            updatesTableView.reloadData()
+        }
+    }
     
     
     override func viewDidLoad() {
@@ -162,8 +166,6 @@ extension RegionsViewController: CLLocationManagerDelegate {
             let camera = GMSCameraPosition.camera(withLatitude: currentLocation.coordinate.latitude,
                                                   longitude: currentLocation.coordinate.longitude,
                                                   zoom: 18)
-            
-            
             DispatchQueue.main.async(execute: {
                 self.regionsMapView.animate(to: camera)})
         }
