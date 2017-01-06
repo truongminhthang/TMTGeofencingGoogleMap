@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57DCDFB2410B8120C08E53C3 /* Pods_TMTGeofencingGoogleMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2455E2A51D4AE83B2A73339 /* Pods_TMTGeofencingGoogleMap.framework */; };
 		FFF48EFC1E1FAE07003B4D85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF48EFB1E1FAE07003B4D85 /* AppDelegate.swift */; };
 		FFF48EFE1E1FAE07003B4D85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF48EFD1E1FAE07003B4D85 /* ViewController.swift */; };
-		FFF48F011E1FAE07003B4D85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF48EFF1E1FAE07003B4D85 /* Main.storyboard */; };
 		FFF48F031E1FAE07003B4D85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF48F021E1FAE07003B4D85 /* Assets.xcassets */; };
 		FFF48F061E1FAE07003B4D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF48F041E1FAE07003B4D85 /* LaunchScreen.storyboard */; };
+		FFF48F0E1E1FAE22003B4D85 /* RegionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF48F0D1E1FAE22003B4D85 /* RegionsViewController.swift */; };
+		FFF48F101E1FAE27003B4D85 /* Geofencing.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FFF48F0F1E1FAE27003B4D85 /* Geofencing.gpx */; };
+		FFF48F141E1FAE37003B4D85 /* RegionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF48F131E1FAE37003B4D85 /* RegionAnnotation.swift */; };
+		FFF48F161E1FAE48003B4D85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF48F151E1FAE48003B4D85 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FFD098DEAEB5F14372E3E2D /* Pods-TMTGeofencingGoogleMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMTGeofencingGoogleMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMTGeofencingGoogleMap/Pods-TMTGeofencingGoogleMap.debug.xcconfig"; sourceTree = "<group>"; };
+		A2455E2A51D4AE83B2A73339 /* Pods_TMTGeofencingGoogleMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMTGeofencingGoogleMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60ED98384E5F5EA89A416A9 /* Pods-TMTGeofencingGoogleMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMTGeofencingGoogleMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMTGeofencingGoogleMap/Pods-TMTGeofencingGoogleMap.release.xcconfig"; sourceTree = "<group>"; };
 		FFF48EF81E1FAE07003B4D85 /* TMTGeofencingGoogleMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMTGeofencingGoogleMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF48EFB1E1FAE07003B4D85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF48EFD1E1FAE07003B4D85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FFF48F001E1FAE07003B4D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFF48F021E1FAE07003B4D85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFF48F051E1FAE07003B4D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFF48F071E1FAE07003B4D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF48F0D1E1FAE22003B4D85 /* RegionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionsViewController.swift; sourceTree = "<group>"; };
+		FFF48F0F1E1FAE27003B4D85 /* Geofencing.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Geofencing.gpx; sourceTree = "<group>"; };
+		FFF48F131E1FAE37003B4D85 /* RegionAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionAnnotation.swift; sourceTree = "<group>"; };
+		FFF48F151E1FAE48003B4D85 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57DCDFB2410B8120C08E53C3 /* Pods_TMTGeofencingGoogleMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F2CAF70C67626CEE20E0053 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2455E2A51D4AE83B2A73339 /* Pods_TMTGeofencingGoogleMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF365924BF55263B24FDC4B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FFD098DEAEB5F14372E3E2D /* Pods-TMTGeofencingGoogleMap.debug.xcconfig */,
+				F60ED98384E5F5EA89A416A9 /* Pods-TMTGeofencingGoogleMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FFF48EEF1E1FAE07003B4D85 = {
 			isa = PBXGroup;
 			children = (
 				FFF48EFA1E1FAE07003B4D85 /* TMTGeofencingGoogleMap */,
 				FFF48EF91E1FAE07003B4D85 /* Products */,
+				EF365924BF55263B24FDC4B9 /* Pods */,
+				4F2CAF70C67626CEE20E0053 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,9 +85,12 @@
 			isa = PBXGroup;
 			children = (
 				FFF48EFB1E1FAE07003B4D85 /* AppDelegate.swift */,
+				FFF48F0D1E1FAE22003B4D85 /* RegionsViewController.swift */,
+				FFF48F131E1FAE37003B4D85 /* RegionAnnotation.swift */,
 				FFF48EFD1E1FAE07003B4D85 /* ViewController.swift */,
-				FFF48EFF1E1FAE07003B4D85 /* Main.storyboard */,
+				FFF48F151E1FAE48003B4D85 /* Main.storyboard */,
 				FFF48F021E1FAE07003B4D85 /* Assets.xcassets */,
+				FFF48F0F1E1FAE27003B4D85 /* Geofencing.gpx */,
 				FFF48F041E1FAE07003B4D85 /* LaunchScreen.storyboard */,
 				FFF48F071E1FAE07003B4D85 /* Info.plist */,
 			);
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFF48F0A1E1FAE07003B4D85 /* Build configuration list for PBXNativeTarget "TMTGeofencingGoogleMap" */;
 			buildPhases = (
+				7310FAAFDEDF5EFF5B90CE8B /* [CP] Check Pods Manifest.lock */,
 				FFF48EF41E1FAE07003B4D85 /* Sources */,
 				FFF48EF51E1FAE07003B4D85 /* Frameworks */,
 				FFF48EF61E1FAE07003B4D85 /* Resources */,
+				BF68CAE2C587926DB4EDAB25 /* [CP] Embed Pods Frameworks */,
+				E0778DC322825E663CF903CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,13 +160,62 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF48F101E1FAE27003B4D85 /* Geofencing.gpx in Resources */,
 				FFF48F061E1FAE07003B4D85 /* LaunchScreen.storyboard in Resources */,
 				FFF48F031E1FAE07003B4D85 /* Assets.xcassets in Resources */,
-				FFF48F011E1FAE07003B4D85 /* Main.storyboard in Resources */,
+				FFF48F161E1FAE48003B4D85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7310FAAFDEDF5EFF5B90CE8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF68CAE2C587926DB4EDAB25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMTGeofencingGoogleMap/Pods-TMTGeofencingGoogleMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0778DC322825E663CF903CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMTGeofencingGoogleMap/Pods-TMTGeofencingGoogleMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFF48EF41E1FAE07003B4D85 /* Sources */ = {
@@ -138,21 +223,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF48EFE1E1FAE07003B4D85 /* ViewController.swift in Sources */,
+				FFF48F0E1E1FAE22003B4D85 /* RegionsViewController.swift in Sources */,
 				FFF48EFC1E1FAE07003B4D85 /* AppDelegate.swift in Sources */,
+				FFF48F141E1FAE37003B4D85 /* RegionAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FFF48EFF1E1FAE07003B4D85 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFF48F001E1FAE07003B4D85 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FFF48F041E1FAE07003B4D85 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,6 +338,7 @@
 		};
 		FFF48F0B1E1FAE07003B4D85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FFD098DEAEB5F14372E3E2D /* Pods-TMTGeofencingGoogleMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 56AJJ634ZU;
@@ -272,6 +352,7 @@
 		};
 		FFF48F0C1E1FAE07003B4D85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F60ED98384E5F5EA89A416A9 /* Pods-TMTGeofencingGoogleMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 56AJJ634ZU;
@@ -302,6 +383,7 @@
 				FFF48F0C1E1FAE07003B4D85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

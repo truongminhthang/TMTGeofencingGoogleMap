@@ -1,0 +1,6 @@
+framework module Pods_TMTGeofencingGoogleMap {
+  umbrella header "Pods-TMTGeofencingGoogleMap-umbrella.h"
+
+  export *
+  module * { export * }
+}

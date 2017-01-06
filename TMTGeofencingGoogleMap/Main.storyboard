@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JbH-ch-yhB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Regions View Controller-->
+        <scene sceneID="rki-JJ-kgf">
+            <objects>
+                <viewController storyboardIdentifier="RegionsViewController" extendedLayoutIncludesOpaqueBars="YES" id="JbH-ch-yhB" customClass="RegionsViewController" customModule="TMTGeofencingGoogleMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DRv-e4-yNt"/>
+                        <viewControllerLayoutGuide type="bottom" id="vzU-IR-ecX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="39R-HC-n2S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="T4U-5J-aaO">
+                                <rect key="frame" x="-4" y="64" width="383" height="603"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="8Ib-GD-d0u">
+                                        <rect key="frame" x="0.0" y="22" width="383" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Ib-GD-d0u" id="MOP-RJ-6vl">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JbH-ch-yhB" id="9TA-0D-xG6"/>
+                                    <outlet property="delegate" destination="JbH-ch-yhB" id="CLu-8I-UnQ"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eri-sX-E1o" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVL-eN-iVl">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="WUD-wJ-X3M"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="dXq-gl-vpc">
+                                        <nil key="title"/>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="YCj-DN-S53">
+                                            <rect key="frame" x="112" y="28" width="160" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Map"/>
+                                                <segment title="Updates"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="switchView:" destination="JbH-ch-yhB" eventType="valueChanged" id="Zgn-Kd-hcJ"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rsa-Uc-DMd">
+                                            <connections>
+                                                <action selector="addRegionDidTap" destination="JbH-ch-yhB" id="DqG-y7-0cf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dVL-eN-iVl" firstAttribute="leading" secondItem="39R-HC-n2S" secondAttribute="leadingMargin" constant="-20" id="Ga7-44-Qld"/>
+                            <constraint firstItem="Eri-sX-E1o" firstAttribute="leading" secondItem="39R-HC-n2S" secondAttribute="leading" id="Lsb-oq-7AK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dVL-eN-iVl" secondAttribute="trailing" constant="-20" id="Oau-Hk-7ll"/>
+                            <constraint firstItem="vzU-IR-ecX" firstAttribute="top" secondItem="Eri-sX-E1o" secondAttribute="bottom" id="Q3I-Ts-4gJ"/>
+                            <constraint firstItem="Eri-sX-E1o" firstAttribute="top" secondItem="DRv-e4-yNt" secondAttribute="bottom" constant="44" id="WkN-k2-f4d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T4U-5J-aaO" secondAttribute="trailing" constant="-20" id="Zda-xp-FlS"/>
+                            <constraint firstItem="dVL-eN-iVl" firstAttribute="top" secondItem="39R-HC-n2S" secondAttribute="top" id="cbY-NW-ArZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Eri-sX-E1o" secondAttribute="trailing" id="dcw-vv-JPB"/>
+                            <constraint firstItem="T4U-5J-aaO" firstAttribute="leading" secondItem="39R-HC-n2S" secondAttribute="leadingMargin" constant="-20" id="jlX-XD-4Mq"/>
+                            <constraint firstItem="vzU-IR-ecX" firstAttribute="top" secondItem="T4U-5J-aaO" secondAttribute="bottom" id="sPb-dU-ois"/>
+                            <constraint firstItem="T4U-5J-aaO" firstAttribute="top" secondItem="dVL-eN-iVl" secondAttribute="bottom" id="zYs-vd-Wve"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <connections>
+                        <outlet property="addRegion" destination="rsa-Uc-DMd" id="01G-pg-pxP"/>
+                        <outlet property="navigationBar" destination="dVL-eN-iVl" id="P7C-UF-a6I"/>
+                        <outlet property="regionsMapView" destination="Eri-sX-E1o" id="EfC-RK-B4B"/>
+                        <outlet property="updatesTableView" destination="T4U-5J-aaO" id="BDK-EZ-emj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrj-93-ab1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="359"/>
+        </scene>
+    </scenes>
+</document>

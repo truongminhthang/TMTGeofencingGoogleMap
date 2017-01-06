@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="Xcode">
+    <wpt lat="21.034491482594646" lon="105.76605074107647">
+        <name>poi</name>
+        <time>2016-10-28T12:00:00Z</time>
+    </wpt>
+    <wpt lat="21.032680830594963" lon="105.7729721814394">
+        <name>poi</name>
+        <time>2016-10-28T12:00:30Z</time>
+    </wpt>
+</gpx>
